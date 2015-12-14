@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>st</short-name>
+    <function>
+        <description>Print out the html safe string</description>
+        <name>escapeXml</name>
+        <function-class>cn.ruihe.utils.JspUtil</function-class>
+        <function-signature>java.lang.String escapeXml(java.lang.String)</function-signature>
+        <example>${st:escapeXml(str)}</example>
+    </function>
+
+    <function>
+        <description>Print out the format date of now</description>
+        <name>now</name>
+        <function-class>cn.ruihe.utils.JspUtil</function-class>
+        <function-signature>java.lang.String date(java.lang.String)</function-signature>
+        <example>${st:date(str)}</example>
+    </function>
+
+    <function>
+        <description>Print out the format date of custom</description>
+        <name>date</name>
+        <function-class>cn.ruihe.utils.JspUtil</function-class>
+        <function-signature>java.lang.String date(java.util.Date,java.lang.String)</function-signature>
+        <example>${st:date(date, str)}</example>
+    </function>
+
+    <function>
+        <description>截取详细说明</description>
+        <name>summary</name>
+        <function-class>cn.ruihe.utils.JspUtil</function-class>
+        <function-signature>java.lang.String summay(java.lang.String,int)</function-signature>
+        <example>${st:summary(describe, 10)}</example>
+    </function>
+</taglib>
